@@ -42,7 +42,7 @@ var total_weight = 0
 for category in all_categories:
     total_weight += category.weight
 
-# Shuffles a sequnce using the Fisher-Yates algorithm
+# Shuffles a sequence using the Fisher-Yates algorithm
 proc shuffle[T](deck: var seq[T]) =
     for i in 0..(len(deck)-2):
         let j = random(len(deck)-i)
